@@ -1,0 +1,168 @@
+@media (max-width: 1000px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+
+  .navigation {
+    flex-direction: column;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 950px) {
+  header {
+    padding: 10px;
+  }
+
+  /* Hero section */
+  .hero-section,
+  .hero-wrapper {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .hero-text-container {
+    width: 90%;
+    margin-right: 25px;
+  }
+
+  .hero-image-container {
+    padding: 10px;
+  }
+
+  .profile-image {
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(45deg, #f5f4f4, #ebe1e7);
+  }
+
+  .social-icons {
+    flex-direction: column;
+  }
+
+  /* Skills section */
+  .skills-contianer {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  .html-box,
+  .css-box,
+  .javascript-box,
+  .react-box {
+    display: block;
+    width: 100%;
+  }
+
+  .progress-bar {
+    width: 380px;
+  }
+
+  .css-box .progress-bar {
+    width: 230px;
+  }
+
+  .html-box .progress-bar {
+    width: 260px;
+  }
+
+  .javascript-box .progress-bar {
+    width: 150px;
+  }
+
+  .react-box .progress-bar {
+    width: 100px;
+  }
+
+  /* Contact form */
+  .contact-container {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+  }
+
+  h2,
+  h1,
+  h3 {
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .input-group {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  button {
+    margin: auto;
+    width: 150px;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    font-size: 19px;
+  }
+
+  .footer-content {
+    flex: 1;
+    text-align: left;
+  }
+
+  .footer-content p {
+    margin: 0;
+    font-size: 15px;
+  }
+
+  .social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+    flex-direction: row;
+  }
+
+  .social-icons li {
+    font-size: 1.5rem;
+  }
+
+  .social-icons a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+  }
+
+  .social-icons a:hover {
+    color: #ff5733;
+  }
+}

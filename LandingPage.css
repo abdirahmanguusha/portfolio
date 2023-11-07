@@ -1,0 +1,366 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: #f1efefbf;
+  background-color: #27005d;
+}
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  background-color: #30009c;
+  color: white;
+  padding: 22px;
+  margin-bottom: 20px;
+}
+.navigation {
+  display: flex;
+  gap: 20px;
+  font-size: 25px;
+}
+
+.navigation a {
+  color: #fcf7ff;
+  text-decoration: none;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.navigation a:hover {
+  background-color: #ff5733;
+}
+
+/*  this is the hero section css code */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+
+  margin-top: 15px;
+  width: 90%;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.hero-text-container {
+  margin-right: 100px;
+  padding: 10px;
+}
+
+.hero-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.highlighted-text {
+  color: #12ffd0;
+}
+.hero-description {
+  font-size: 20px;
+  line-height: 1.6;
+}
+.profile-image {
+  max-width: 170%;
+  height: auto;
+  border-radius: 50%;
+  margin: 0;
+  margin-top: auto;
+  box-shadow: 0 4px 6px rgb(0, 0, 0);
+  background: linear-gradient(45deg, #f4f5f526, #722453);
+}
+.social-icons a {
+  font-size: 25px;
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+  color: rgb(250, 245, 245);
+  margin-top: 20px;
+}
+
+.social-icons a:hover {
+  transform: scale(1.4);
+  color: #ff5733;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.hero-title {
+  margin-bottom: 30px;
+  font-size: 31px;
+}
+.mygoal {
+  font-weight: bolder;
+  color: #f9f871;
+}
+
+/* this about me section ......................................*/
+
+.about-me-container {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-me-container h1 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.about-me-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.col1,
+.col2,
+.col3 {
+  flex: 1;
+  width: 33%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  padding-bottom: 0;
+}
+
+.about-me-section h3 {
+  margin-bottom: 30px;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.about-me-section p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* this skills section css ......................................*/
+
+.skills-contianer {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+  box-shadow: 0 15px 16px rgb(207, 207, 202);
+  border-radius: 5px;
+
+  margin-bottom: 70px;
+  padding-bottom: 16px;
+}
+.wrapper2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #30009c;
+  margin-top: 20px;
+}
+
+.html-box,
+.css-box,
+.javascript-box,
+.react-box {
+  flex-basis: 50%;
+  padding: 10px;
+}
+.html-box,
+.css-box,
+.javascript-box,
+.react-box {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  background: #16bffd;
+  background: -webkit-linear-gradient(to right, #eb075700, #16bffd);
+  background: linear-gradient(to right, #cb306697, #10c2fda3);
+
+  height: 30px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.progress {
+  height: 100%;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.percentage {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+.css-box .progress-bar {
+  width: 60%;
+}
+
+.html-box .progress-bar {
+  width: 92%;
+}
+.javascript-box .progress-bar {
+  width: 50%;
+}
+.react-box .progress-bar {
+  width: 30%;
+}
+
+.contact-container {
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(35, 126, 236, 0.1);
+  padding: 20px;
+  margin: auto;
+  width: 80%;
+}
+
+.contact-form {
+  text-align: center;
+  width: 500px;
+  margin: auto;
+  padding: 20px;
+}
+
+h2,
+h1,
+h3 {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.invalid-input {
+  border: 3px solid red;
+}
+
+#thank-you-message {
+  font-size: 40px;
+  margin: auto;
+}
+
+/* footer css styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 45px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-content {
+  flex: 1;
+  text-align: left;
+}
+
+.footer-content p {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+}
+
+.social-icons li {
+  font-size: 1.5rem;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ff5733;
+}

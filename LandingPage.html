@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- this is font awesome link for icons -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- this  is font family link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- this is css link -->
+    <link rel="stylesheet" href="LandingPage.css" />
+    <!-- mobile version -->
+    <link rel="stylesheet" href="mobile.css" />
+    <title>PortfolioByAbdi</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>Portfolio</h1>
+      </div>
+      <nav class="navigation">
+        <a href="#about-me-container">About me</a>
+        <a href="#contact-container">contact</a>
+      </nav>
+    </header>
+    <!-- this the hero section html code  -->
+    <section class="hero-section">
+      <div class="hero-wrapper">
+        <div class="hero-text-container">
+          <h1 class="hero-title">
+            Hi! I'm Abdirahman,
+            <span class="highlighted-text">Front-End Developer</span>
+          </h1>
+          <p class="hero-description">
+            I am based in London. I'm incredibly enthusiastic about the prospect of switching careers to become a web developer. While I'm currently in the early stages of my learning journey, my passion for web development knows no bounds, and I'm committed to making this transition with full dedication
+          </p>
+        </div>
+        <div class="hero-image-container">
+          <img src="img/profile.png" alt="profile" class="profile-image" />
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+            <a href="#"><i class="fab fa-instagram-square"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="about-me-container" id="about-me-container" >
+      <h1>About Me</h1>
+      <div class="about-me-section">
+        <div class="col1">
+          <h3>Current Stage of Learning</h3>
+          <p>
+            I'm currently in the early stages of my web development journey,
+            eagerly building a strong foundation in the world of HTML, CSS, and
+            JavaScript. I believe that I've only scratched the surface of what I
+            can achieve, and I'm determined to take my skills to the next level.
+          </p>
+        </div>
+        <div class="col2">
+          <h3> Joining Founders and Coders Bootcamp</h3>
+          <p>
+            I'm eager to join "Founders and Coders" for its structured, hands-on
+            learning from experts and collaboration with like-minded peers and
+            mentors—perfectly aligning with my growth commitment. 
+          </p>
+        </div>
+        <div class="col3">
+          <h3>Passion for Learning</h3>
+          <p>
+            I consider myself a highly motivated and driven individual, always
+            seeking opportunities to learn and improve. My passion for web
+            development is driven by my eagerness to stay on the cutting edge of
+            technology, lead innovation, and create web experiences that
+            anticipate the evolving needs of users.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+      <section class="skills-contianer">
+        
+      <h2>My Journey through Tech Knowledge so far</h2>
+          <div class='wrapper2'>
+              <div class='html-box'>
+                  <h4>Html </h4>
+                  <div class='progress-bar'>
+                      <div class='progress progress-80'></div>
+                      <div class='percentage'> 98% </div>
+                  </div>
+              </div>
+              <div class='css-box'>
+                  <h4>Css</h4>
+                  <div class='progress-bar'>
+                      <div class='progress progress-70'></div>
+                      <div class='percentage'>60%</div>
+                  </div>
+              </div>
+              <div class='javascript-box'>
+                  <h4>Javascript</h4>
+                  <div class='progress-bar'>
+                      <div class='progress progress-90'></div>
+                      <div class='percentage'>40</div>
+                  </div>
+              </div>
+              <div class='react-box'>
+                  <h4>React</h4>
+                  <div class='progress-bar'>
+                      <div class='progress progress-75'></div>
+                      <div class='percentage'>10%</div>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </div>
+  <div class="contact-container" id="contact-container">
+    <div class="contact-form">
+        <h2>Contact Me</h2>
+        <form id="contact-form" method="post">
+            <div class="input-group">
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" placeholder="Your Name">
+                <span class="error-message" id="name-error"></span>
+            </div>
+            <div class="input-group">
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" placeholder="Your Email">
+                <span class="error-message" id="email-error"></span>
+            </div>
+            <div class="input-group">
+                <label for="message">Message: </label>
+                <textarea id="message" name="message" placeholder="Your Message"></textarea>
+                <span class="error-message" id="message-error"></span>
+            </div>
+            <button type="submit" id="submit-button">Send</button>
+        </form>
+    </div>
+    <div id="thank-you-message" style="display: none;">
+        Thank you! We will get back to you soon.
+    </div>
+</div>
+
+
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2023 Abdirahman Abdi</p>
+    <p>Passionate about <span class="highlight">Creativity</span>, <span class="highlight">Innovation</span>, and <span class="highlight">Learning</span>.</p>
+    <ul class="social-icons">
+      <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+      <li><a href="#" target="_blank"><i class="fab fa-github"></i></a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+  </body>
+
+  
+</html>
